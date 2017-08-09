@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext");
+html body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px; }
+
+.google-seo-app .google-seo {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb; }
+  .google-seo-app .google-seo p {
+    display: block;
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0; }
+    .google-seo-app .google-seo p.title {
+      color: #1a0dab;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1.2;
+      cursor: pointer; }
+      .google-seo-app .google-seo p.title:hover {
+        text-decoration: underline; }
+    .google-seo-app .google-seo p.href {
+      color: #006621;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px; }
+    .google-seo-app .google-seo p.desc {
+      color: #545454;
+      line-height: 1.4;
+      font-size: small;
+      word-wrap: break-word; }
+.google-seo-app .google-seo-form {
+  margin-top: 25px; }
+
+.information {
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px; }
+  .information span.inCODE {
+    color: #fbbc05;
+    font-weight: bold; }
+
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>inTrade Google SEO Preview Tool</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assest/master.css">
+
+    <script src="assest/js/jquery.min.js"></script>
+    <script src="assest/js/jquery.stringtoslug.min.js"></script>
+    <script src="assest/js/speakingurl.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="google-seo-app">
+            <div class="google-seo">
+                <p class="title">ahmettashan (Ahmet Taşhan) · GitHub</p>
+                <p class="href">https://github.com/<span id="permalink">ahmettashan</span></p>
+                <p class="desc">Follow ahmettashan on GitHub and watch them build beautiful projects.</p>
+            </div>
+            <div class="google-seo-form">
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label for="site-title" class="col-form-label">Site Title</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="site_title" class="form-control" id="site-title" placeholder="ahmettashan (Ahmet Taşhan) · GitHub">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <label for="site-description" class="col-form-label">Site description</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="site_description" class="form-control" id="site-description" placeholder="Follow ahmettashan on GitHub and watch them build beautiful projects.">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        This project is among the projects developed in the scope of <span class="inCODE">inCODE Team</span>
+    </div>
+
+    <script>
+
+        /*
+         * PermaLink
+         * */
+        $('input[name=site_title]').stringToSlug({
+            getPut: '#permalink'
+        });
+
+        /*
+        * Site Title & Description
+        * */
+        $('input[name=site_title]').keyup(function () {
+            var site_title = $( this ).val();
+            if ( !site_title ){
+                $('.google-seo-app > .google-seo > p.title').text ('ahmettashan (Ahmet Taşhan) · GitHub');
+            }else
+                $('.google-seo-app > .google-seo > p.title').text ( site_title );
+        }).keyup();
+        $('input[name=site_description]').keyup(function () {
+            var site_desc = $( this ).val();
+            if ( !site_desc )
+                $('.google-seo-app > .google-seo > p.desc').text ('Follow ahmettashan on GitHub and watch them build beautiful projects.');
+            else
+                $('.google-seo-app > .google-seo > p.desc').text ( site_desc );
+        }).keyup();
+
+
+    </script>
+</body>
+</html>
